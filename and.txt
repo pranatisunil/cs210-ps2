@@ -1,0 +1,9 @@
+# Run gdb to find the value
+gdb andtest
+(gdb) x/2gx _start
+# The second value (the one after the first 8 bytes) is your answer
+# Copy it with 0x prefix, e.g., 0x123456789abcdef0
+(gdb) quit
+
+# Create the file (replace with actual value)
+echo -n "0xYOUR_VALUE_HERE" > and.txt
