@@ -1,0 +1,7 @@
+gdb imultest
+(gdb) x/gx &data_start
+# Copy this value with 0x prefix
+(gdb) quit
+
+# Create the file
+echo -n "0xYOUR_VALUE_HERE" > imul.txt
