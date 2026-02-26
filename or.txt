@@ -1,0 +1,11 @@
+gdb ortest
+(gdb) break _start
+(gdb) run
+(gdb) set $rip = test1
+(gdb) continue
+(gdb) print/x $rax
+# Copy this value with 0x prefix
+(gdb) quit
+
+# Create the file
+echo -n "0xYOUR_VALUE_HERE" > or.txt
